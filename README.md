@@ -22,18 +22,18 @@ Check out the live project here: [https://sprintglobalpay.onrender.com](https://
 ```bash
 git clone https://github.com/Chhaviroy/currency_converter.git
 ```
----
+
 
 ## Navigate to the project folder:
 
 cd currency_converter
----
+
 
 # Create a virtual environment (optional but recommended):
 
 python -m venv venv
 
----
+
 
 
 # Activate the virtual environment:
@@ -42,7 +42,7 @@ python -m venv venv
 
 - Mac/Linux: source venv/bin/activate
 
----
+
 
 # Install dependencies:
 
