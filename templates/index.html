@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SprintGlobalPay</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top, #0b1220, #020617);
+            color: #e5e7eb;
+        }
+
+        /* ---------- HERO ---------- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 20px;
+        }
+
+        .badge-custom {
+            background: rgba(34,197,94,0.18);
+            color: #22c55e;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+        }
+
+        .hero-desc {
+            font-size: 1.15rem;
+            color: #cbd5f5;
+            max-width: 750px;
+            line-height: 1.7;
+        }
+
+        .btn-main {
+            background: #22c55e;
+            border: none;
+            padding: 14px 38px;
+            font-weight: 600;
+            border-radius: 30px;
+            color: #020617;
+        }
+
+        .btn-main:hover {
+            background: #16a34a;
+        }
+
+        /* ---------- SECTIONS ---------- */
+        .section {
+            padding: 100px 20px;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #9ca3af;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 60px;
+        }
+
+        /* ---------- FEATURE CARDS ---------- */
+        .glass {
+            background: rgba(255,255,255,0.07);
+            backdrop-filter: blur(14px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.12);
+            height: 100%;
+        }
+
+        .glass h5 {
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .glass p {
+            color: #d1d5db;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ---------- IMAGE SHOWCASE ---------- */
+        .image-card {
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.85);
+            transition: transform 0.4s ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(34,197,94,0.25);
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+        }
+
+        .image-overlay h6 {
+            font-weight: 600;
+            margin: 0;
+        }
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+            text-align: center;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <span class="badge-custom">Enterprise FinTech Platform</span>
+
+        <h1>SprintGlobalPay</h1>
+        <h4 class="text-success mt-3">Smart Multi-Currency Converter</h4>
+
+        <p class="hero-desc mt-4">
+            SprintGlobalPay is a scalable financial technology platform designed to
+            perform accurate multi-currency conversion, real-time exchange rate lookup,
+            and cross-border financial analysis. The system is built using FastAPI with
+            a modular architecture that supports future expansion into analytics,
+            automation, and financial intelligence.
+        </p>
+
+        <a href="#features" class="btn btn-main mt-4">
+            Explore Platform
+        </a>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+    <div class="container text-center">
+        <h2 class="section-title">Core Platform Capabilities</h2>
+        <p class="section-subtitle">
+            SprintGlobalPay is designed with a strong backend architecture and a
+            modern user interface to ensure accuracy, performance, and scalability.
+        </p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="glass">
+                    <h5>⚡ Real-Time Currency Conversion</h5>
+                    <p>
+                        Instantly convert currencies using a high-performance FastAPI backend.
+                        The system processes requests efficiently and delivers accurate results
+                        suitable for financial and business use cases.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="glass">
+                    <h5>🔐 Secure & Modular Architecture</h5>
+                    <p>
+                        Built with a clean separation between frontend, backend services,
+                        and data layers. This ensures secure API handling, easy maintenance,
+                        and the ability to scale the platform with additional features.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="glass">
+                    <h5>📊 Exchange Rate Insights</h5>
+                    <p>
+                        Provides exchange rate lookup and conversion history support,
+                        enabling users to analyze currency behavior and integrate future
+                        financial analytics or visualization modules.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- IMAGE SHOWCASE -->
+<section class="section">
+    <div class="container text-center">
+        <h2 class="section-title">Global Finance, Visualized</h2>
+        <p class="section-subtitle">
+            Explore how SprintGlobalPay connects currencies, markets,
+            and financial data across the globe.
+        </p>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" alt="">
+                    <div class="image-overlay">
+                        <h6>Global Currency Exchange</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80" alt="">
+                    ``<div class="image-overlay">
+                        <h6>FinTech Dashboards</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="">
+                    <div class="image-overlay">
+                        <h6>Data-Driven Insights</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e" alt="">
+                    <div class="image-overlay">
+                        <h6>Cross-Border Payments</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <a href="/converter" class="btn btn-main btn-lg">
+                Try Currency Converter →
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    SprintGlobalPay • FinTech Platform • Built with FastAPI
+</footer>
+
+</body>
+</html>
