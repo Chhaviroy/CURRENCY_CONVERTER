@@ -21,10 +21,15 @@ def converter_page(request: Request):
 # ---------------- BACKEND LOGIC ----------------
 
 def get_exchange_rate(from_currency, to_currency):
-    for row in exchange_rates:
-        if row["from"] == from_currency and row["to"] == to_currency:
-            return row["rate"]
-    return None
+    try:
+        # Convert from source currency to USD
+        amount_in_usd = 1 / exchange_rates[from_currency]
+        # Convert from USD to target currency
+        rate = amount_in_usd * exchange_rates[to_currency]
+        return rate
+    except KeyError:
+        return None
+
 
 
 @app.get("/rate")
