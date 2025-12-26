@@ -17,6 +17,17 @@ Check out the live project here: [https://sprintglobalpay.onrender.com](https://
 - Easy to use interface (if you have a frontend).
 - Deployed live on Render.
 
+## Code Quality
+
+This project uses **SonarCloud** for continuous code quality analysis:
+
+- Integrated with GitHub Actions workflow
+- Quality Gate enforced on every push/PR
+- Maintains **A-grade** code quality with bug, vulnerability, and code smell checks
+
+![SonarCloud Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=Chhaviroy_CURRENCY_CONVERTER&metric=alert_status)
+
+
 ## 💻 Installation (for local development)
 1. Clone the repository:
 ```bash
